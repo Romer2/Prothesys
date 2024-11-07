@@ -1,0 +1,1688 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: "Roboto-Light";
+    color: white;
+    transition: 0.5s;
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url('../Fonts/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url('../Fonts/Roboto-Regular.ttf');
+}
+
+body {
+    background-color: #080808;
+}
+
+.section {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.py-80 {
+    padding: 80px 0px;
+}
+
+/* header */
+
+.NavBack {
+    background-color: #000000;
+}
+
+.mainNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+.mainNav a {
+    color: rgb(255, 255, 255);
+    font-family: "Roboto-Regular";
+}
+
+
+.Burger {
+    display: none;
+}
+
+.hovera:hover {
+    scale: 1.1;
+}
+
+.NavigationMain {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 0px;
+}
+
+.Inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Searcher input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+
+/* header */
+
+/* Banner */
+
+.Banner {
+    background-image: url('../Media/Banner2.png');
+    width: 100%;
+    height: 80vh;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: "Roboto-Regular";
+}
+
+#Yellow {
+    color: yellow;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 15px;
+}
+
+.CtlBtn {
+    font-family: "Roboto-Regular";
+    padding: 20px 35px;
+    font-size: 50px;
+    border: 1px solid yellow;
+    background-color: yellow;
+    text-align: center;
+    color: black;
+}
+
+.CtlBtn:hover {
+    scale: 1.1;
+    border: 1px solid yellow;
+    background-color: black;
+    color: yellow;
+}
+
+/* Banner */
+
+/* News */
+
+.NewsBK {
+    background-color: #000000;
+}
+
+.NewsBK h1, p {
+    color: rgb(255, 255, 255);
+}
+
+.NewsBK h4 {
+    color: rgb(255, 255, 255);
+}
+
+.News {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 30px;
+}
+
+.NewMain {
+    padding: 20px;
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    gap: 40px;
+}
+
+.NewMain:hover {
+    background-color: yellow;
+    scale: 1.05;
+}
+
+.NewMain:hover h4  {
+    color: black;
+}
+
+.NewMain:hover p  {
+    color: black;
+}
+
+.CardNew {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;    
+    justify-content: center;
+    align-items: center;
+}
+
+.CardNew p {
+    font-size: 25px;
+    color: white;
+}
+
+.CardNew img {
+    width: 300px;
+    height: 300px;
+}
+
+/* News */
+
+/* Records */
+
+.RecordsBK {
+    background-color: #000;
+}
+
+.Records {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 60px;
+}
+
+.RecMain h4 {
+    color:white;
+}
+
+.RecMain {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.CardRec {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Records */
+
+/* About */
+
+.AboutBk {
+    background-image: url('../Media/About.png');
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    box-shadow: inset 20px 20px 20px black;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: "Roboto-Regular";
+}
+
+.About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    gap: 15px;
+}
+
+/* About */
+
+/* Courses */
+
+.CoursesBk {
+    background-color: #0F0F0F;
+}
+
+.Courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 70px;
+}
+
+.CoursesMain {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    gap: 40px;
+}
+
+.titleAdd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.titleAdd button {
+    font-size: 40px;
+}
+
+.Cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.Card h4, p, a {
+    color: white;
+}
+
+.Card {
+    position: relative;
+}
+
+/* Modal Window */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+    opacity: 0;
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+}
+
+.modal:target {
+
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modal-content {
+    background-color: #000;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 130px;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 70px;
+}
+
+/* Modal Window */
+
+.Cardtext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.CardtextAdm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+}
+
+.Card {
+    display: flex;
+    border: 1px solid yellow;
+    background-color: #000;
+    padding: 20px;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.Card img {
+    width: 100%;
+    height: 70%;
+}
+
+.Card:hover {
+    scale: 1.05;
+    box-shadow: 0px 0px 20px 3px yellow;
+    border-radius: 20px;
+}
+
+.CardBtn {
+    font-size: 25px;
+    border: 1px solid yellow;
+    color: black;
+    background-color: yellow;
+    padding: 5px 35px;
+}
+
+.CardBtn:hover {
+    scale: 1.05;
+    border: 1px solid yellow;
+    background-color: black;
+    color: yellow;
+}
+
+.BTNadm {
+    font-size: 20px;
+}
+
+/* Courses */
+
+/* ContUs */
+
+.ContUs {
+    background-image: url('../Media/Banner.png');
+    width: 100%;
+    height: 80vh;
+}
+
+.title2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 15px;
+}
+
+.BtnZapis {
+    padding: 10px;
+    font-size: 40px;
+    font-family: "Roboto-Regular";
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+    border: 2px solid yellow;;
+}
+
+.BtnZapis:hover {
+    scale: 1.05;
+    color: yellow;
+    background-color: #000;
+    border: 2px solid yellow;
+}
+
+/* ContUs */
+
+/* Steps */
+
+.StepsBK {
+    background-color: #0F0F0F;
+}
+
+.StepsMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.Cifra {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cifra p {
+    color: #ffffff;
+}
+
+.Step p1 {
+    font-size: 25px;
+}
+
+.Step {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    border: 1px solid white;
+    background-color: black;
+    padding: 20px;
+}
+
+.Step:hover {
+    background-color: yellow;
+    color: black;
+    scale: 1.05;
+}
+.TextSteps {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+.TextSteps:hover strong {
+    color: black;
+}
+
+.TextSteps:hover p1 {
+    color: black;
+}
+
+/* Steps */
+
+/* Partners */
+
+.PartnersBk {
+    background-color: #000000;
+}
+
+.Partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}
+
+.PartnersImages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* Partners */
+
+/* Footer */
+
+.FooterBk {
+    background-color: #0F0F0F;
+}
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: "Roboto-Light";
+}
+
+.footerContainMain {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    gap: 100px;
+}
+
+.FootCtn1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+}
+
+.FootCn2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 110px;
+}
+
+.FootIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Footer */
+
+/* Modal Window */
+
+/* Modal Window */
+
+/* Card */
+
+.MainCardBk {
+    background-color: #080808;
+}
+
+.TitleMain {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    gap: 50px;
+}
+
+.MainCard {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+    gap: 50px;
+}
+
+.CardImage img {
+    width: 100%;
+}
+
+.CardText02 {
+
+    bottom: 0px;
+    left: 0px;
+    margin: 80px;
+}
+
+.DownText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+}
+
+.DownText p {
+    padding: 20px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.CardText02 {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.CardBtn02 {
+    padding: 20px;
+    background-color: black;
+    border: 1px solid white;
+    font-size: 40px;
+}
+
+.CardBtn02:hover {
+    scale: 1.05;
+    background-color: yellow;
+    color: black;
+}
+
+/* Card */
+
+/* CardAbout */
+
+.AboutCourseBk {
+    background-color: #080808;
+}
+
+.AboutCourse {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.CardAbout {
+    background-color: black;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    gap: 30px;
+    padding: 30px;
+}
+
+.CardAbout img {
+    width: 60%;
+}
+
+.CardAboutText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* CardAbout */
+
+/* Authors */
+
+.AuthorsBk {
+    background-color: rgb(0, 0, 0);
+}
+
+.Authors {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    gap: 50px;
+}
+
+.AuthorsAbout {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.AuthOne {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+/* Authors */
+
+/* Programmes */
+
+.ProgrBk {
+    background-color: #080808;
+}
+
+.Progr {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.Programmes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    gap: 70px;
+}
+
+.OneProgName {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.OneProg {
+    display: flex;
+    border: 1px solid white;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.tab {
+    display: none;
+    padding: 20px;
+}
+
+.tab:target {
+    display: block;
+}
+
+.OneProg p {
+    font-size: 50px;
+}
+
+/* Programmes */
+
+/* Authorization */
+
+.AuthentBk {
+    background-color: #080808;
+    padding: 80px;
+}
+
+.Authoriz {
+    background-color: #0F0F0F;
+    padding: 80px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+}
+
+.Auth02 {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin: 0 auto;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
+}
+
+.PlaceAuthoriz input {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    width: 100%;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+}
+
+.PlaceAuthoriz {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.BtnRegister {
+    padding: 20px 30px;
+    color: yellow;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.BtnRegister:hover {
+    scale: 1.05;
+    color: white;
+    border: 1px solid yellow;
+}
+
+.BtnInside:hover {
+    scale: 1.05;
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+.BtnInside {
+    padding: 20px 30px;
+    font-size: 50px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.AuthorizText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Authorization */
+
+/* Registration */
+
+.Auth03 {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin: 0 auto;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    gap: 50px;
+}
+
+.Accept {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.Accept input {
+    scale: 2;
+    border: 1px solid white;
+}
+
+.BtnInside02 {
+    padding: 10px 20px;
+    font-size: 50px;
+    color: yellow;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.BtnInside02:hover {
+    color: rgb(255, 255, 255);
+    border: 1px solid yellow;
+    scale: 1.05;
+}
+
+/* Registration */
+
+/* Adaptive */
+
+@media screen and (max-width: 770px) {
+    * {
+        font-size: 15px;
+    }
+
+    /* Burger */
+
+    .nav,
+    #burger {
+        display: none;
+    }
+
+    .Burger img{
+        width: 40px;
+    }
+    
+    .Burger {
+        display: block;
+        position: relative;
+        text-align: center;
+        width: 50px;
+        left: 560px;
+        top: 0px;
+    }
+
+    [for=burger] {
+        display: block;
+    }
+
+    [for=burger]::before {
+        content: '☰';
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+        width: 600px;
+        position: relative;
+        right: 620px;
+        top: 5px;
+        gap: 35px;
+    }
+
+    #burger:checked+label+nav {
+        display: block;
+    }
+
+    /* Burger */
+
+    .section {
+        max-width: 600px;
+    }
+
+    .py-80 {
+        padding: 60px 0px;
+    }
+
+    .Searcher input {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .NavBack {
+        width: 100%;
+    }
+
+    .mainNav {
+        display: none;
+    }
+
+    .mainNav:hover a {
+        scale: 1.05;
+    }
+
+    .NavigationMain {
+        gap: 10px;
+        padding: 20px 0px;
+    }
+
+    .Inside {
+        gap: 10px;
+    }
+
+    .Auth02 {
+        padding: 60px;
+    }
+
+    .Auth03 {
+        padding: 40px;
+    }
+
+    .BtnInside {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    .BtnInside02 {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    .BtnRegister {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .Footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .footerContainMain {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .FootCn2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        height: 100%;
+    }
+
+    .FootCtn1 {
+        flex-direction: column;
+        height: 100%;
+        gap: 15px;
+    }
+
+    .FootIcons {
+        width: 50%;
+        gap: 10px;
+    }
+
+    .FootIcons img {
+        width: 25px;
+    }
+
+    /* Index */
+
+    .Banner {
+        background-image: url('../Media/Banner.png');
+        width: 768px;
+        height: 280px;
+        background-size: cover;
+    }
+
+    .mainNav img {
+        width: 60px;
+    }
+
+    .CtlBtn {
+        font-size: 30px;
+        padding: 10px 25px;
+    }
+
+    .AboutBk {
+        width: 768px;
+        height: 350px;
+    }
+
+    .Cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .Card img {
+        width: 100%;
+    }
+
+    .CardMain {
+        gap: 120px;
+        top: 30px;
+    }
+
+    .CardBtn {
+        font-size: 25px;
+        padding: 5px 15px;
+    }
+
+    .FiltBtn {
+        font-size: 25px;
+        padding: 5px 30px;
+    }
+
+    .Cardtext {
+        gap: 50px;
+    }
+
+    .PartnersImages img {
+        width: 15%;
+    }
+
+    /* Index */
+
+    /* Card */
+
+    .OneProgName img {
+        width: 50%;
+    }
+
+    .Programmes p {
+        font-size: 30px;
+    }
+
+    .AuthorsAbout {
+        gap: 30px;
+    }
+
+    .AuthOne img {
+        width: 90%;
+    }
+
+    .CardBtn02 {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .CardText02 {
+        gap: 15px;
+        margin: 40px;
+    }
+
+    .DownText p {
+        padding: 7px;
+        font-size: 15px;
+    }
+
+    .DownText {
+        gap: 10px;
+    }
+
+    .CardAbout {
+        flex-direction: column;
+    }
+
+    .CardAbout img {
+        width: 100%;
+    }
+
+    .BTNadm {
+        font-size: 15px;
+    }
+
+    .titleAdd button {
+        font-size: 25px;
+    }
+
+    /* Card */
+
+    /* Record */
+
+    .Records {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Record */
+    /* News */
+
+    .News {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .NewMain p {
+        font-size: 18px;
+    }
+
+    .CardNew img {
+        width: 100%;
+        height: 60%;
+    }
+
+    /* News */
+
+    /* Steps */
+
+    .StepsMain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .TextSteps p1 {
+        font-size: 18px;
+    }
+
+    /* Steps */
+
+    /* ContUS */
+
+    .ContUs {
+        background-image: url('../Media/Banner.png');
+        width: 100%;
+        height: 30vh;
+    }
+
+    .BtnZapis {
+        font-size: 12px;
+    }
+
+    /* ContUS */
+
+    /* modal */
+
+    .modal {
+        width: 430px;
+    }
+
+    .modal-dialog {
+        position: absolute;
+        display: flex;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .modal-content {
+        gap: 20px;
+        padding: 100px 5px;
+    }
+
+    .modal-body {
+        width: 380px;
+        gap: 20px;
+    }
+
+    /* modal */
+}
+
+@media screen and (max-width: 430px) {
+    * {
+        font-size: 10px;
+    }
+
+    /* Burger */
+
+    .nav,
+    #burger {
+        display: none;
+    }
+
+    .Burger img{
+        width: 25px;
+    }
+    
+    .Burger {
+        display: block;
+        position: relative;
+        text-align: center;
+        width: 50px;
+        left: 350px;
+        top: 0px;
+    }
+
+    [for=burger] {
+        display: block;
+    }
+
+    [for=burger]::before {
+        content: '☰';
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+        width: 380px;
+        position: relative;
+        right: 350px;
+        top: 5px;
+        gap: 15px;
+    }
+
+    #burger:checked+label+nav {
+        display: block;
+    }
+
+    /* Burger */
+
+
+    .section {
+        max-width: 380px;
+    }
+
+    .py-80 {
+        padding: 40px 0px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 15px;
+        font-family: "Roboto-Light";
+    }
+
+    .NavBack {
+        width: 100%;
+    }
+
+    .mainNav {
+        gap: 10px;
+    }
+
+    .NavigationMain {
+        gap: 10px;
+        padding: 20px 0px;
+    }
+
+    .Inside {
+        gap: 10px;
+    }
+
+    .AuthentBk {
+        padding: 50px 0px;
+    }
+
+    .Auth02 {
+        padding: 30px;
+        border-radius: 30px;
+    }
+
+    .Auth03 {
+        padding: 30px;
+        border-radius: 30px;
+    }
+
+    .PlaceAuthoriz input {
+        padding: 15px;
+    }
+
+    .BtnInside {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .BtnInside02 {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .BtnRegister {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .Footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 10px;
+    }
+
+    .footerContainMain {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .FootCtn1 {
+        flex-direction: column;
+        height: 100%;
+        gap: 5px;
+    }
+
+    .FootCn2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        height: 100%;
+    }
+
+    .FootIcons {
+        width: 50%;
+        gap: 5px;
+    }
+
+    .FootIcons img {
+        width: 15px;
+    }
+
+    /* Index */
+
+    .Banner {
+        background-image: url('../Media/Banner.png');
+        width: 430px;
+        height: 150px;
+        background-size: cover;
+    }
+
+    .mainNav img {
+        width: 40px;
+    }
+
+    .CtlBtn {
+        font-size: 20px;
+        padding: 5px 15px;
+    }
+
+    .AboutBk {
+        width: 430px;
+        height: 200px;
+    }
+
+    .Cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .Card img {
+        width: 100%;
+    }
+
+    .CardMain {
+        gap: 220px;
+        top: 30px;
+    }
+
+    .CardBtn {
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+
+    .Filter {
+        gap: 20px;
+    }
+
+    .FiltBtn {
+        font-size: 15px;
+        padding: 5px 20px;
+    }
+
+    .Cardtext {
+        gap: 100px;
+    }
+
+    .CardtextAdm {
+        gap: 60px;
+    }
+
+    .Cardtext p {
+        font-size: 15px;
+    }
+
+    .PartnersImages img {
+        width: 15%;
+    }
+
+    /* Index */
+
+    /* Record */
+
+    .Records {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    /* Record */
+    /* News */
+
+    .News {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* News */
+
+    /* Steps */
+
+    .StepsMain {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .TextSteps p1 {
+        font-size: 12px;
+    }
+
+    /* Steps */
+
+    /* ContUS */
+
+    .ContUs {
+        background-image: url('../Media/Banner.png');
+        width: 100%;
+        height: 30vh;
+    }
+
+    .BtnZapis {
+        font-size: 12px;
+    }
+
+    /* ContUS */
+
+    /* Card */
+
+    .OneProgName img {
+        width: 30%;
+    }
+
+    .OneProgName {
+        padding: 14px;
+        justify-content: space-between;
+        gap: 90px;
+        width: 100%;
+    }
+
+    .OneProgName a {
+        padding: 0px;
+    }
+
+    .Programmes {
+        gap: 30px;
+    }
+
+    .Programmes p {
+        font-size: 15px;
+    }
+
+    .AuthorsAbout {
+        gap: 10px;
+    }
+
+    .AuthOne img {
+        width: 90%;
+    }
+
+    .CardBtn02 {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .CardText02 {
+        gap: 15px;
+        margin: 40px;
+    }
+
+    .DownText p {
+        padding: 7px;
+        font-size: 15px;
+    }
+
+    .DownText {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        height: 100%;
+        gap: 10px;
+    }
+
+    .CardAbout {
+        flex-direction: column;
+    }
+
+    .CardAbout p {
+        font-size: 12px;
+    }
+
+    .CardAbout img {
+        width: 100%;
+    }
+
+    .BTNadm {
+        font-size: 20px;
+    }
+
+    .titleAdd button {
+        font-size: 15px;
+    }
+
+    /* Card */
+
+    .Accept input {
+        scale: 1;
+    }
+
+    .Accept {
+        gap: 10px;
+    }
+
+    /* modal */
+
+    .modal {
+        width: 430px;
+    }
+
+    .modal-dialog {
+        position: absolute;
+        display: flex;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .modal-content {
+        gap: 20px;
+        padding: 100px 5px;
+    }
+
+    .modal-body {
+        width: 380px;
+        gap: 20px;
+    }
+
+    /* modal */
+
+}
+
+/* Adaptive */
